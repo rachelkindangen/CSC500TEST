@@ -20,20 +20,16 @@
 path{
   stroke:#000000;
   stroke-dasharray: 700;
-  opacity:10;
-  animation:animate 3s cubic-bezier(0,0.23,1,.1);
+  opacity:1;
+  animation:write 3s cubic-bezier(0,0.23,1,.1);
 
 }
 
-@keyframes animate{
+@keyframes write{
   0%{
     stroke-dashoffset: 700;
-    opacity:0;
   }
-  30%{
-    stroke-dashoffset: 700;
-    opacity:10;
-  }
+  
 }
 
 @media (max-width: 1150px) {
@@ -65,7 +61,7 @@ path{
   -webkit-animation: arrow 2s infinite; 
 }
 
-@-webkit-keyframes arrow 
+@keyframes arrow 
 {
   0% {
     opacity:0
